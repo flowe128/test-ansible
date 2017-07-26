@@ -1,0 +1,8 @@
+- name: PHP Install test
+  host: all
+  tasks:
+  -name: Install Message
+   debug:
+     msg: "Installing PHP"
+  -name: Install PHP
+   yum: name=php state=latest
