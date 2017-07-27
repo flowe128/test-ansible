@@ -5,4 +5,4 @@
   tasks:
  
   - name: Hello World!
-    yum: name=php state=current
+    yum: name=php state=latest
