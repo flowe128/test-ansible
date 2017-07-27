@@ -1,6 +1,6 @@
 ---
-- name: PHP Install test
-  host: all
+- name: Hello World!
+  hosts: all  
   
   tasks:
   
