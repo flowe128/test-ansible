@@ -4,8 +4,5 @@
   
   tasks:
   
-  -name: Install Message
-   shell: echo "Installing PHP"
-   
   -name: Install PHP
    yum: name=php state=latest
