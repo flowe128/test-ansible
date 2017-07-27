@@ -1,8 +1,8 @@
 ---
-- name: Hello World!
-  hosts: all  
-  
+- name: PHP Install!
+  hosts: all
+ 
   tasks:
-  
-  -name: Install PHP
-   yum: name=php state=latest
+ 
+  - name: Hello World!
+    shell: echo "Hi! Tower is working."
