@@ -1,0 +1,8 @@
+---
+- name: Postgresql Install
+  hosts: all
+  sudo: yes 
+  tasks:
+ 
+  - name: Install Postgresql!
+    yum: name=postgresql state=latest
