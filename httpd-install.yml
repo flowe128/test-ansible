@@ -13,4 +13,4 @@
 
   handlers:
     - name: restart apache
-      service: name-httpd state=restarted
+      service: name=httpd state=restarted
