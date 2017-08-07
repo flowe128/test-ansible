@@ -6,8 +6,6 @@
  
   - name: Install Postgresql Server!
     yum: name=postgresql-server state=latest
-
-  - name: Start Postgresql server
     notify:
     - restart postgresql
   - name: ensure postgresql is running (and enable it at boot)
@@ -15,4 +13,3 @@
   handlers:
     - name: restart postgresql
       service: name=postgresql.service state=restarted
-
