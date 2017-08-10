@@ -6,6 +6,8 @@
  
   - name: Install Postgresql Server!
     yum: name=postgresql-server state=latest
+  - name: Initialize Database
+    command: postgresql-setup initdb
     notify:
     - restart postgresql
   - name: ensure postgresql is running (and enable it at boot)
